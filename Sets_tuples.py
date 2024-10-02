@@ -119,24 +119,23 @@ and you may call me V."""
 
 
 # Convert the text to a tuple of characters
-
-
-
-
+tuple(text)
 # Tuple to store the target characters
+tuple_v= tuple(text)
 
+#Count occurrences of 'v' or 'V' by filtering the text_tuple
+occurance_2=tuple_v.count('v')
+occurance_1=tuple_v.count('V')
 
+Total_times= int(occurance_2)+ int(occurance_1)
 
-
-
-
-# Count occurrences of 'v' or 'V' by filtering the text_tuple
-
+print(Total_times)
 
 
 
 # Output the result
 
+#Output: equals the total amount of times that 'V' (capitalized and not capitalized) appers in the text
 
 
 
@@ -145,48 +144,57 @@ and you may call me V."""
 # Define the dictionary
 
 
-# sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# # get length of the list
-# print(len(sample_list)) # Output: 3
-# #this is called a nested list
-# # Extract and print the second element from the first list
-
-
-# sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
+sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# get length of the list
+print(len(sample_list)) # Output: 3
+#this is called a nested list
+# Extract and print the second element from the first list
+print(sample_list[0])
+print(sample_list[2])
+print(sample_list[1])
+print(len(sample_list))
+#want to extract the 8 from the sample list
+print(sample_list[2][1])
+#how to gewt the 6 from the smaple lsit
+print(sample_list[1][2])
+print(sample_list[0][2])
+print(sample_list[2][0])
+sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # # Extract and print the second fruit from the list
+print(sample_list_of_fruit['fruits'][0])
+print(sample_list_of_fruit['fruits'][1])
+print(sample_list_of_fruit['fruits'][2])
 
 
-# sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
+
+sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 # # Extract and print the third element from the second list
+print(sample_list_of_lists ['lists'][1][2])
+print(sample_list_of_lists ['lists'][2][2])
 
 
-
-
-# sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
+sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
 # # Extract and print the age of the second person
+print(sample_list_of_dicts ["dicts"][1]['age'])
+print(sample_list_of_dicts ["dicts"][2]['name'])
+print(sample_list_of_dicts ["dicts"][0]['name'])
 
 
 
-
-
-
-# data = {
-#     "fruits": {"tropical": ["mango", "pineapple", "banana"], "berries": ["strawberry", "blueberry", "raspberry"]},
-#     "prices": {"mango": 1.5, "pineapple": 2.5, "banana": 0.5}
-# }
+data = {     "fruits": {"tropical": ["mango", "pineapple", "banana"], "berries": ["strawberry", "blueberry", "raspberry"]},     "prices": {"mango": 1.5, "pineapple": 2.5, "banana": 0.5}}
 
 
 # # Extract and print the second item from the 'tropical' list
 # print(data["fruits"]["tropical"][1])  # Output: 'pineapple'
 
-
+print(data['fruits']['tropical'][1])
 
 
 # # Define the dictionary
 # info = {
 #     "team": {"coach": {"name": "John Doe", "age": 45}, "players": ["Alice", "Bob", "Charlie"]},
 #     "location": "New York"
-# }
+#}
 
 
 # # Extract and print the coach's name
